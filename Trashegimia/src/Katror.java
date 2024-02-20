@@ -35,9 +35,9 @@ public class Katror extends Drejtkendesh{
 
 	@Override
 	public String toString() {
-		ObjektGjeometrik o = new ObjektGjeomterik; 
+		ObjektGjeometrik o = new ObjektGjeometrik(); 
 		return String.format("katrori me brinje %.2f ka perimeter %.2f dhe siperfaqe %.2f\n", this.getBrinjaA(), getPerimeter(),
-				getSiperfaqe(), super.toString(o));
+				getSiperfaqe()) + super.toString();
 	}
 	
 }
