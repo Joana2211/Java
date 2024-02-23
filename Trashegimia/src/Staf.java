@@ -37,6 +37,13 @@ public class Staf extends Punonjes{
 	public void setTitulli(String titulli) {
 		this.titulli = titulli;
 	}
+	 public boolean rritjePage() {
+  	   if(getVitet()<5) return false; 
+  	   
+  	   this.setPaga(paga*1.1);
+  	   return true; 
+  	  
+     }
 
 	@Override
 	public String toString() {

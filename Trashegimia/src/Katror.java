@@ -26,16 +26,18 @@ public class Katror extends Drejtkendesh{
 	public double getBrinjaA() {
 		return brinjaA; 
 	}
+	@Override
 	public double getPerimeter() {
 		return 4 * brinjaA; 
 	}
+	@Override
 	public double getSiperfaqe() {
 		return brinjaA * brinjaA; 
 	}
 
 	@Override
 	public String toString() {
-		ObjektGjeometrik o = new ObjektGjeometrik(); 
+		ObjektGjeometrik o = new Drejtkendesh(); 
 		return String.format("katrori me brinje %.2f ka perimeter %.2f dhe siperfaqe %.2f\n", this.getBrinjaA(), getPerimeter(),
 				getSiperfaqe()) + super.toString();
 	}

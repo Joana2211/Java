@@ -49,6 +49,7 @@ public class Drejtkendesh extends ObjektGjeometrik{
      public double getPerimeter() {
     	 return 2 * (brinjaA + brinjaB); 
      }
+     @Override
      public double getSiperfaqe() {
     	 return brinjaA * brinjaB; 
      }

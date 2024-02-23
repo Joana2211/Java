@@ -39,6 +39,7 @@ public class Rreth extends ObjektGjeometrik{
 	public void setRreze(double rreze) {
 		this.rreze = rreze;
 	}
+	@Override
 	public double getPerimeter() {
 		return 2 * Math.PI * rreze;
 	}
